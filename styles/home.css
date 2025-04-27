@@ -1,0 +1,405 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  margin-top: 4rem;
+  background-color: #fff;
+  color: #000;
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.31rem 0.5%;
+  background-color: #F7F7F7;
+  z-index: 10; 
+}
+
+header img {
+  height: 50px;
+  width: auto;
+}
+
+nav a {
+  margin: 0 10px;
+  color:#000;
+  text-decoration: none;
+  font-size: 2.5rem;
+  font-family: 'Jomhuria'
+}
+
+.buttons a {
+  margin-left: 1.5rem;
+  padding: 10px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 2.5rem;
+  font-family: 'Jomhuria'
+}
+
+.entrar {
+  background-color: #DEC17D;
+  color: #000;
+}
+
+.cadastrar {
+  background-color: #25645E;
+  color: #fff;
+}
+
+.sonhos {
+  background-color: #246061;
+  padding: 3rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.sonhos-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.sonhos-text {
+  flex: 1;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 4rem;
+  text-align: center;
+}
+
+.sonhos-text h1 {
+  font-family: 'Montserrat Alternates';
+  color: #fff;
+}
+
+.sonhos-image {
+  flex: 1;
+  text-align: right;
+}
+
+.sonhos-image img {
+  max-width: 80%;
+  height: auto;
+
+}
+
+.cta-button {
+  margin-top: 3rem;
+  background-color: #DDC17C;
+  padding: 1rem 2rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  border-radius: 5rem;
+  font-family: 'roboto';
+  color: #000;
+  font-size: 1.5rem;
+}
+
+.services {
+  margin-top: 4rem;
+  margin-bottom: 10rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.icon-item {
+  background-color: #25645E;
+}
+
+.icon-item p {
+  color: #fff;
+  font-family: 'Montserrat Alternates';
+  font-size: 0.9rem;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin: 2rem 0; 
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  background-color: #000;
+}
+
+.divider-text {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.divider-text h2 strong{
+  font-family: 'Montserrat Alternates';
+}
+.proximo-passo {
+  
+  margin-top: 5rem;
+  margin-bottom: 7rem;
+  
+}
+
+.categorias {
+  display: flex;
+  justify-content: center;
+  gap: 15rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  text-align: right;
+  
+}
+.categoria-direita p {
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: 'Montserrat Alternates';
+  text-align: center;
+}
+.categoria-meio p {
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: 'Montserrat Alternates';
+  text-align: center;
+}
+
+.categoria-esquerda {
+  
+  margin-top: 1rem;
+}
+
+.categoria-esquerda p {
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: 'Montserrat Alternates';
+  text-align: center;
+}
+.imagens-categorias {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  
+}
+
+.imagens-categorias img {
+  width: 25rem;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .categorias, .imagens-categorias {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.contact-section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.steps-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.steps-grid h3 {
+  font-family: 'Montserrat Alternates';
+  font-weight: 700;
+}
+
+.icons div, .steps .steps-grid div {
+  padding: 1rem;
+  border-radius: 8px;
+  width: 150px;
+}
+
+.empresa {
+  padding: 50px 20px;
+}
+
+.empresa-conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px; /* espaço entre texto e formulário */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.empresa-texto {
+  flex: 1;
+}
+
+.empresa-texto h2 {
+  font-family: 'Montserrat Alternates';
+  font-size: 2.5rem;
+}
+
+.empresa-texto p {
+  font-family: 'Montserrat Alternates';
+  font-size: 1.4rem;
+}
+
+.empresa-formulario {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+
+.empresa-formulario input,
+.empresa-formulario textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+.empresa-formulario button {
+  margin-top: 10px;
+  margin-left: 13rem;
+  padding: 1rem;
+  background-color: #12665a;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 10rem;
+  
+}
+
+
+footer {
+  background-color: #f7f7f7;
+  padding: 2rem 1rem;
+}
+
+.newsletter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.newsletter form {
+  background-color: white;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 0.8rem 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.emailfooter {
+  background-color: #fff;
+  border: 0;
+  margin-right: 1.5rem;
+  pointer-events: none;
+}
+
+.newsletter input {
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  width: 370px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo img {
+  width: 120px;
+  height: auto;
+}
+
+.footer-links {
+  display: flex;
+  gap: 4rem;
+}
+
+.footer-section h4 {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #333;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+}
