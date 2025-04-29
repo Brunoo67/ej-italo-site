@@ -67,7 +67,6 @@
     max-width: 1200px;
     margin: 0 auto;
     gap: 3rem;
-    border: 1px solid red;
 }
 
   .nosso-time h2 {
@@ -82,11 +81,20 @@
     letter-spacing: 0.2rem;
     
   }
-  
+
   .membro {
     display: flex;
     align-items: flex-start;
     margin-bottom: 30px;
+  }
+
+  .card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    text-align: left;
   }
   
   .membro img {
@@ -97,7 +105,7 @@
   }
   
   .descricao {
-    max-width: 600px;
+    
   }
   
   .descricao h3 {
